@@ -39,15 +39,17 @@
     transform: rotate(360deg);
   }
 }
-h1 {
-  display: none;
-}
+
 main {
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center ;
 }
 
 form {
@@ -56,6 +58,9 @@ form {
   justify-content: center;
   vertical-align: middle;
   width: 25vw;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
 }
 
 label {
@@ -66,4 +71,19 @@ label {
 }
 input {
   padding: 10px;
+  border: none;
+}
+input[type="Number"] {
+    border-bottom: 5px solid transparent;
+}
+input[type="Number"]:focus {
+  outline: none;
+  border-bottom: 5px solid rgb(13, 172, 13);
+}
+button[type="submit"] {
+  width: 6vw;
+  padding: 12px;
+  margin-left: auto;
+  color: #fff;
+  background-color: rgb(42, 160, 87);
 }
